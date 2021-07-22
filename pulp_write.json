@@ -1,0 +1,20 @@
+{
+  "signal": [ 
+    ["Gbl.",
+      { "name": "clk",    "wave": "p.|...." }
+    ],
+    ["Controller",
+      { "name": "addr",   "wave": "x=|..x.", "data": "addr" },
+      { "name": "write",  "wave": "x1|..x." },
+      { "name": "wdata",  "wave": "x=|..x.", "data": "data" },
+      { "name": "wstrb",  "wave": "x=|..x.", "data": "strb"},
+      { "name": "valid",  "wave": "01|..0." }
+    ],
+    ["Peripheral",
+      { "name": "rdata",  "wave": "x.|..x.", "data": "data" },
+      { "name": "ready",  "wave": "x0|.1x." },
+      { "name": "*error", "wave": "x.|.=x.", "data": "error" }
+    ]
+  ],
+  "head": {"text": "Pulp Write Transaction"}
+}
