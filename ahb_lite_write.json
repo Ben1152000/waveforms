@@ -1,0 +1,92 @@
+{
+  "signal": [
+    [
+      "Global",
+      {
+        "name": "HCLK",
+        "wave": "p....|..."
+      },
+      {
+        "name": "HRESETn",
+        "wave": "0....|..."
+      }
+    ],
+    [
+      "Controller",
+      {
+        "name": "HADDR",
+        "wave": "x345.|.x.",
+        "data": [
+          "addr",
+          "addr",
+          "addr",
+          "addr"
+        ]
+      },
+      {
+        "name": "HBURST",
+        "wave": "x....|...",
+        "data": "addr"
+      },
+      {
+        "name": "*HMASTLOCK",
+        "wave": "x....|..."
+      },
+      {
+        "name": "HPROT",
+        "wave": "x....|..."
+      },
+      {
+        "name": "HSIZE",
+        "wave": "x....|..."
+      },
+      {
+        "name": "HTRANS",
+        "wave": "x....|...",
+        "data": "strb"
+      },
+      {
+        "name": "HWDATA",
+        "wave": "x.34.|.5x",
+        "data": [
+          "data",
+          "data",
+          "data",
+          "data"
+        ]
+      },
+      {
+        "name": "HWRITE",
+        "wave": "x111.|.x."
+      }
+    ],
+    [
+      "Peripheral",
+      {
+        "name": "HRDATA",
+        "wave": "x....|...",
+        "data": [
+          "data",
+          "data",
+          "data",
+          "data"
+        ]
+      },
+      {
+        "name": "HREADY",
+        "wave": "1110.|11x"
+      },
+      {
+        "name": "HRESP",
+        "wave": "x....|...",
+        "data": "error"
+      }
+    ]
+  ],
+  "head": {
+    "text": "AHB-Lite Write Transaction"
+  },
+  "foot": {
+    "tock": 0
+  }
+}
