@@ -1,0 +1,71 @@
+{
+  "signal": [
+    [
+      "Global",
+      {
+        "name": "clk",
+        "wave": "p...|..."
+      },
+      {
+        "name": "reset",
+        "wave": "0...|..."
+      }
+    ],
+    [
+      "Controller",
+      {
+        "name": "address",
+        "wave": "x=..|.x.",
+        "data": "addr"
+      },
+      {
+        "name": "byteenable",
+        "wave": "x=..|.x.",
+        "data": "mask"
+      },
+      {
+        "name": "read",
+        "wave": "01..|.0."
+      },
+      {
+        "name": "write",
+        "wave": "00..|.0."
+      },
+      {
+        "name": "writedata",
+        "wave": "x...|..."
+      },
+      {
+        "name": "*lock",
+        "wave": "x...|..."
+      },
+      {
+        "name": "*debugaccess",
+        "wave": "x...|..."
+      }
+    ],
+    [
+      "Peripheral",
+      {
+        "name": "waitrequest",
+        "wave": "01..|0.."
+      },
+      {
+        "name": "readdata",
+        "wave": "x...|=x.",
+        "data": "data"
+      },
+      {
+        "name": "response",
+        "wave": "x...|=x.",
+        "data": "resp"
+      }
+    ]
+  ],
+  "head": {
+    "text": "Avalon Read Transaction"
+  },
+  "foot": {
+    "tock": 0
+  }
+}

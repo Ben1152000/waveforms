@@ -1,0 +1,3 @@
+- A agent typically receives address, byteenable, read or write, and writedata after the rising edge of the clock. 
+- A agent asserts waitrequest before the rising clock edge to hold off transfers. When the agent asserts waitrequest, the transfer is delayed. While waitrequest is asserted, the address and other control signals are held constant.
+- Transfers complete on the rising edge of the first clk after the agent interface deasserts waitrequest.
