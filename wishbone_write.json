@@ -1,0 +1,107 @@
+{
+  "signal": [
+    [
+      "Global",
+      {
+        "name": "CLK",
+        "wave": "p...|..."
+      },
+      {
+        "name": "RST",
+        "wave": "0...|..."
+      }
+    ],
+    [
+      "Controller",
+      {
+        "name": "ADR",
+        "wave": "x=..|.x.",
+        "data": ["addr"]
+      },
+      {
+        "name": "*TGA",
+        "wave": "x=..|.x.",
+        "data": ["tag"]
+      },
+      {
+        "name": "*SEL",
+        "wave": "x=..|.x.",
+        "data": ["mask"]
+      },
+      {
+        "name": "DAT_O",
+        "wave": "x=..|.x.",
+        "data": ["data"]
+      },
+      {
+        "name": "*TGD_O",
+        "wave": "x=..|.x.",
+        "data": ["tag"]
+      },
+      {
+        "name": "WE",
+        "wave": "x1..|.x.",
+        "data": []
+      },
+      {
+        "name": "STB",
+        "wave": "01..|.0.",
+        "data": []
+      },
+      {
+        "name": "CYC",
+        "wave": "01..|.0.",
+        "data": []
+      },
+      {
+        "name": "*TGC",
+        "wave": "x=..|.x.",
+        "data": ["tag"]
+      },
+      {
+        "name": "*LOCK",
+        "wave": "x...|...",
+        "data": []
+      }
+    ],
+    [
+      "Peripheral",
+      {
+        "name": "DAT_I",
+        "wave": "x...|...",
+        "data": ["data"]
+      },
+      {
+        "name": "*TGD_I",
+        "wave": "x...|...",
+        "data": ["tag"]
+      },
+      {
+        "name": "ACK",
+        "wave": "0...|10.",
+        "data": []
+      },
+      {
+        "name": "*STALL",
+        "wave": "x...|...",
+        "data": []
+      },
+      {
+        "name": "*ERR",
+        "wave": "x...|...",
+        "data": []
+      },
+      {
+        "name": "*RTY",
+        "wave": "x...|...",
+        "data": []
+      }
+    ]
+  ],
+  "head": {
+    "text": "Wishbone Write Transaction"
+  },
+  "foot": {
+    "tock": 0
+  }
+}
