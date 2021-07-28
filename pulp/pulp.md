@@ -1,0 +1,3 @@
+- Transactions consist of only one phase. 
+- The master sets the address, write, write data, and write strobe signals and pulls valid high. Once pulled high, valid must remain high and none of the signals may change. 
+- The transaction completes when both valid and ready are high. Valid must not depend on ready. - The slave presents the read data and error signals. These signals must be constant while valid and ready are both high.

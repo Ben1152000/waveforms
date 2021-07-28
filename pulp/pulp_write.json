@@ -53,5 +53,8 @@
   ],
   "head": {
     "text": "Pulp Write Transaction"
+  },
+  "foot": {
+    "tock": 0
   }
 }
