@@ -42,8 +42,8 @@
       },
       {
         "name": "HTRANS",
-        "wave": "x....|...",
-        "data": "strb"
+        "wave": "x===.|.x.",
+        "data": ["nseq", "nseq", "nseq"]
       },
       {
         "name": "HWDATA",
