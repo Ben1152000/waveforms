@@ -1,0 +1,67 @@
+{
+  "signal": [
+    [
+      "Global",
+      {
+        "name": "PCLK",
+        "wave": "p...|..."
+      },
+      {
+        "name": "PRESETn",
+        "wave": "1...|..."
+      }
+    ],
+    [
+      "Controller",
+      {
+        "name": "PADDR",
+        "wave": "x=..|.x.",
+        "data": ["addr"]
+      },
+      {
+        "name": "PSELx",
+        "wave": "01..|.0.",
+        "data": []
+      },
+      {
+        "name": "PENABLE",
+        "wave": "0.1.|.0.",
+        "data": []
+      },
+      {
+        "name": "PWRITE",
+        "wave": "x1..|.x.",
+        "data": []
+      },
+      {
+        "name": "PWDATA",
+        "wave": "x=..|.x.",
+        "data": ["data"]
+      }
+    ],
+    [
+      "Peripheral",
+      {
+        "name": "PREADY",
+        "wave": "x.0.|1x.",
+        "data": []
+      },
+      {
+        "name": "PRDATA",
+        "wave": "x...|...",
+        "data": ["data"]
+      },
+      {
+        "name": "*PSLVERR",
+        "wave": "x...|.x.",
+        "data": []
+      }
+    ]
+  ],
+  "head": {
+    "text": "APB Write Transaction"
+  },
+  "foot": {
+    "tock": 0
+  }
+}
