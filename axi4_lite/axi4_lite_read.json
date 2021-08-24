@@ -1,0 +1,111 @@
+{
+  "signal": [
+    [
+      "Global",
+      {
+        "name": "ACLK",
+        "wave": "p.|......"
+      },
+      {
+        "name": "ARESETn",
+        "wave": "0.|......"
+      }
+    ],
+    [
+      "Controller",
+      {
+        "name": "AWADDR",
+        "wave": "x.|..|...",
+        "data": "addr"
+      },
+      {
+        "name": "AWPROT",
+        "wave": "x.|..|...",
+        "data": "mask"
+      },
+      {
+        "name": "AWVALID",
+        "wave": "x.|..|..."
+      },
+      {
+        "name": "WDATA",
+        "wave": "x.|..|...",
+        "data": "data"
+      },
+      {
+        "name": "WSTRB",
+        "wave": "x.|..|...",
+        "data": "mask"
+      },
+      {
+        "name": "WVALID",
+        "wave": "x.|..|..."
+      },
+      {
+        "name": "BREADY",
+        "wave": "x.|..|..."
+      },
+      {
+        "name": "ARADDR",
+        "wave": "x=|.x|...",
+        "data": "addr"
+      },
+      {
+        "name": "ARPROT",
+        "wave": "x.|..|..."
+      },
+      {
+        "name": "ARVALID",
+        "wave": "01|.0|..."
+      },
+      {
+        "name": "RREADY",
+        "wave": "x.|.0|1x."
+      }
+    ],
+    [
+      "Peripheral",
+      {
+        "name": "AWREADY",
+        "wave": "x.|..|..."
+      },
+      {
+        "name": "WREADY",
+        "wave": "x.|..|...",
+        "data": "data"
+      },
+      {
+        "name": "BRESP",
+        "wave": "x.|..|...",
+        "data": "ok"
+      },
+      {
+        "name": "BVALID",
+        "wave": "x.|..|..."
+      },
+      {
+        "name": "ARREADY",
+        "wave": "x0|1x|..."
+      },
+      {
+        "name": "RDATA",
+        "wave": "x.|.=|.x.",
+        "data": "data"
+      },
+      {
+        "name": "RRESP",
+        "wave": "x.|..|..."
+      },
+      {
+        "name": "RVALID",
+        "wave": "0.|.1|.0."
+      }
+    ]
+  ],
+  "head": {
+    "text": "AXI4-Lite Read Transaction"
+  },
+  "foot": {
+    "tock": 0
+  }
+}
